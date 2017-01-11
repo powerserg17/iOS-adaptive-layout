@@ -24,23 +24,31 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noX-Gd-Kfo" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="200" width="600" height="400"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0j-U3-Uol">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E0j-U3-Uol">
                                         <rect key="frame" x="-7" y="10" width="614" height="177"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
+                                        </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtk-iG-B9H">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wtk-iG-B9H">
                                         <rect key="frame" x="73" y="10" width="454" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="wtk-iG-B9H" firstAttribute="width" secondItem="noX-Gd-Kfo" secondAttribute="width" id="41e-99-ahn"/>
                                     <constraint firstItem="wtk-iG-B9H" firstAttribute="centerX" secondItem="noX-Gd-Kfo" secondAttribute="centerX" id="6EK-gi-3ei"/>
                                     <constraint firstItem="E0j-U3-Uol" firstAttribute="centerX" secondItem="noX-Gd-Kfo" secondAttribute="centerX" id="YDc-lG-p7L"/>
+                                    <constraint firstItem="E0j-U3-Uol" firstAttribute="width" secondItem="noX-Gd-Kfo" secondAttribute="width" id="aur-Ls-LP5"/>
                                     <constraint firstItem="E0j-U3-Uol" firstAttribute="top" secondItem="noX-Gd-Kfo" secondAttribute="top" constant="10" id="qha-Dm-lug"/>
                                     <constraint firstAttribute="bottom" secondItem="wtk-iG-B9H" secondAttribute="bottom" constant="10" id="vb4-LB-d4R"/>
                                 </constraints>
@@ -63,25 +71,25 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="RTj-Ri-616"/>
-                                <exclude reference="Tv7-Io-Mxe"/>
                                 <exclude reference="czU-l2-LP0"/>
                                 <exclude reference="q3A-7t-EHQ"/>
                                 <exclude reference="qdh-9z-LXE"/>
+                                <exclude reference="RTj-Ri-616"/>
+                                <exclude reference="Tv7-Io-Mxe"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="RTj-Ri-616"/>
-                                <include reference="Tv7-Io-Mxe"/>
-                                <exclude reference="TwW-BQ-fFY"/>
-                                <exclude reference="V8E-6b-Yov"/>
                                 <exclude reference="ReV-t1-g8h"/>
                                 <exclude reference="afP-Df-Qpj"/>
                                 <include reference="czU-l2-LP0"/>
                                 <include reference="q3A-7t-EHQ"/>
                                 <include reference="qdh-9z-LXE"/>
                                 <exclude reference="yAt-Lp-5FO"/>
+                                <include reference="RTj-Ri-616"/>
+                                <include reference="Tv7-Io-Mxe"/>
+                                <exclude reference="TwW-BQ-fFY"/>
+                                <exclude reference="V8E-6b-Yov"/>
                             </mask>
                         </variation>
                     </view>
