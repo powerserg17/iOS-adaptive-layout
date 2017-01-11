@@ -23,19 +23,67 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noX-Gd-Kfo" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="200" width="600" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0j-U3-Uol">
+                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtk-iG-B9H">
+                                        <rect key="frame" x="73" y="10" width="454" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wtk-iG-B9H" firstAttribute="centerX" secondItem="noX-Gd-Kfo" secondAttribute="centerX" id="6EK-gi-3ei"/>
+                                    <constraint firstItem="E0j-U3-Uol" firstAttribute="centerX" secondItem="noX-Gd-Kfo" secondAttribute="centerX" id="YDc-lG-p7L"/>
+                                    <constraint firstItem="E0j-U3-Uol" firstAttribute="top" secondItem="noX-Gd-Kfo" secondAttribute="top" constant="10" id="qha-Dm-lug"/>
+                                    <constraint firstAttribute="bottom" secondItem="wtk-iG-B9H" secondAttribute="bottom" constant="10" id="vb4-LB-d4R"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="noX-Gd-Kfo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RTj-Ri-616"/>
                             <constraint firstItem="oxo-Kp-wWx" firstAttribute="height" relation="lessThanOrEqual" secondItem="noX-Gd-Kfo" secondAttribute="height" multiplier="0.4" id="ReV-t1-g8h"/>
+                            <constraint firstItem="noX-Gd-Kfo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Tv7-Io-Mxe"/>
                             <constraint firstItem="noX-Gd-Kfo" firstAttribute="top" secondItem="oxo-Kp-wWx" secondAttribute="bottom" constant="20" id="TwW-BQ-fFY"/>
                             <constraint firstItem="noX-Gd-Kfo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V8E-6b-Yov"/>
                             <constraint firstAttribute="trailing" secondItem="noX-Gd-Kfo" secondAttribute="trailing" id="WeS-xF-dc2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="noX-Gd-Kfo" secondAttribute="bottom" id="YTf-cC-l6Z"/>
                             <constraint firstItem="oxo-Kp-wWx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="afP-Df-Qpj"/>
+                            <constraint firstItem="oxo-Kp-wWx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="czU-l2-LP0"/>
+                            <constraint firstItem="oxo-Kp-wWx" firstAttribute="width" secondItem="noX-Gd-Kfo" secondAttribute="width" multiplier="0.5" id="q3A-7t-EHQ"/>
+                            <constraint firstItem="oxo-Kp-wWx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="qdh-9z-LXE"/>
                             <constraint firstItem="oxo-Kp-wWx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yAt-Lp-5FO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RTj-Ri-616"/>
+                                <exclude reference="Tv7-Io-Mxe"/>
+                                <exclude reference="czU-l2-LP0"/>
+                                <exclude reference="q3A-7t-EHQ"/>
+                                <exclude reference="qdh-9z-LXE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="RTj-Ri-616"/>
+                                <include reference="Tv7-Io-Mxe"/>
+                                <exclude reference="TwW-BQ-fFY"/>
+                                <exclude reference="V8E-6b-Yov"/>
+                                <exclude reference="ReV-t1-g8h"/>
+                                <exclude reference="afP-Df-Qpj"/>
+                                <include reference="czU-l2-LP0"/>
+                                <include reference="q3A-7t-EHQ"/>
+                                <include reference="qdh-9z-LXE"/>
+                                <exclude reference="yAt-Lp-5FO"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
